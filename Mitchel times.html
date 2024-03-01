@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+
+	<title>Countdown Timer</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<style>
+		body {
+			background-color: rgb(239, 239, 247);
+			font-family: Arial, sans-serif;
+			text-align: center;
+			color: rgb(130, 88, 88);
+		}
+		h1 {
+			font-size: 3rem;
+			margin-top: 2rem;
+		}
+		.countdown {
+			font-size: 2rem;
+			margin-top: 2rem;
+		}
+	</style>
+</head>
+
+<body>
+	<h1 style="color: rgb(9, 16, 14);">BRAND NEW PS5 GIVEAWAY </h1>
+	<P style="color: rgb(62, 111, 95)">Giveaway ends on tuesday,30 september 2025 AT 11:30</P>
+	<img src="ps5 image.avif" height="300" width="300"
+	<br>
+	<p style="color: rgb(0, 0, 0);"> Experience lightning-fast loading with an ultra-high speed SSD, deeper immersion with support for haptic feedback1, adaptive triggers1 and 3D Audio*, and an all-new generation of incredible PlayStation games.</p>
+	<div class="countdown" id="countdown"></div>
+	<script>
+		const countdown = document.getElementById('countdown');
+		const targetDate = new Date('2025-09-22T11:30:00Z').getTime();
+
+		const interval = setInterval(() => {
+			const now = new Date().getTime();
+			const distance = targetDate - now;
+
+			const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+			countdown.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+			if (distance < 0) {
+				clearInterval(interval);
+				countdown.innerHTML = 'EXPIRED';3
+			}
+		}, 1000);
+	</script>
+</body>
+</html>

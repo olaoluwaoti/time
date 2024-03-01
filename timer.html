@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>iPhone 15 Pro Max Promo Countdown</title>
+<style>
+    body {
+        background-color: rgb(47, 108, 80);
+    }
+  #countdown {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+  }
+</style>
+</head>
+<style>
+    .center {
+        text-align: center;
+    }
+</style>
+<div class="center">
+<h1 style="color: rgb(95, 18, 33);">GRAB NOW</h1><br>
+<h3 style="color: rgb(95, 18, 33);">GET YOUR IPHONE 15 PRO MAX AT 50% OFF NOW</h3>
+</div>
+<body>
+<div id="countdown"></div>
+<div class="center">
+<p style="color: aqua;">This is a once in a lifetime promo which ends on the 22nd 0f March 2024</p> 
+</div>
+
+<script>
+    const countdown = document.getElementById('countdown');
+    const targetDate = new Date('2024-03-22T00:00:00Z').getTime();
+
+    const interval = setInterval(() => {
+        const now = new Date().getTime();
+        const distance = targetDate - now;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        countdown.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+        if (distance < 0) {
+            clearInterval(interval);
+            countdown.innerHTML = 'EXPIRED';
+        }
+    }, 1000);
+    
+    </script>
+</div>
+<style>
+    .center {
+        text-align: center;
+    }
+</style>
+<div class="center">
+<img src='c:\Users\Chibueze Ebubechukwu\Pictures\GRAD\iphone-15-pro-gray.jpg'  height="200" width="300"></a><br>
+<p><a href=https://www.google.com/search?q=iphone+15+pro+max&oq=&gs_lcrp=EgZjaHJvbWUqCQgAEEUYOxjCAzIJCAAQRRg7GMIDMgkIARBFGDsYwgMyCQgCEEUYOxjCAzIJCAMQRRg7GMIDMgkIBBBFGDsYwgMyCQgFEEUYOxjCAzIJCAYQRRg7GMIDMgkIBxBFGDsYwgPSAQk2MjczajBqMTWoAgiwAgE&sourceid=chrome&ie=UTF-8> Click here</a>for more inquiries and products</p>
+    <form>
+        <b>
+        <fieldset>
+            <legend>FILL THE BELOW FORM TO GET THE OFFER NOW</legend>
+    First Name: <br> <input type="text" name="firstname"/> <br/>
+    Last Name:<br> <input type="text" name="last name"/> <br/>
+    </form>
+    <form>
+    <label for="email">Email: </label><br>
+    <input type="email" id="email" name="email"/> <br/>
+    </form>
+    <form>
+    <label for="password">Password: </label><br>
+    <input type="password" id="password" name="password"/> <br/>
+    </form> <form>
+    <label for="gender">Gender: </label><br>
+    <input type="radio" id="gender" name="gender" value="male"/>Male
+    <input type="radio" id="gender" name="gender" value="female"/>Female <br/>
+    </form>
+    <form>
+    <label><b>Telephone Number:</b></label><br>
+    <input type="tel" name="telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+    <input type="submit"><br><br>
+    </form>
+    <form>
+    <p>Kindly Select your favorite color</p>
+    <input type="radio" name="color" value="red"> Red <br>
+    <input type="radio" name="color" value="blue"> blue <br>
+    <input type="radio" name="color" value="green">green <br>
+    <input type="radio" name="color" value="pink">pink <br>
+    <input type="submit" value="submit">
+    </form>
+    <form>
+    <label>Enter your Name:</label>
+    <input type="text" name="name">
+    <form>
+    <label>
+    Select the meeting schedule: <br><br>
+    Select date & time: <input type="datetime-local" name="meetingdate"> <br><br>
+    </label>
+    <input type="submit">
+    </form>
+    <form>
+    <label>Enter your age: </label>
+    <input type="number" name="num" min="50" max="80">
+    <input type="submit">
+    </form>
+    <form>
+    <label>Enter your Birth Month-year: </label>
+    <input type="month" name="newMonth">
+    <input type="submit">
+    </fieldset>
+</b>
+    </form>
+    
+</div>
+</body>
+</body>
+</html>
